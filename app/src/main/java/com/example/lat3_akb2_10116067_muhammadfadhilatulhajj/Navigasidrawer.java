@@ -55,27 +55,7 @@ public class Navigasidrawer extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.navigasidrawer, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -95,7 +75,14 @@ public class Navigasidrawer extends AppCompatActivity
             class1 = Music.newInstance();
         } else if (id == R.id.nav_profile) {
             class1 = new Home();
+        }
+            else if (id== R.id.nav_findme)
+            {
+                class1 = new Home();
+            }
+            else if (id== R.id.nav_about) {
 
+                class1 = new About();
 
 
         }

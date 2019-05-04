@@ -11,7 +11,7 @@
         <item
             android:id="@+id/nav_dialy"
             android:icon="@drawable/ic_dialy1"
-            android:title="Daily" />
+            android:title="Daily Activity" />
         <item
             android:id="@+id/nav_galeri"
             android:icon="@drawable/ic_gallery"
@@ -23,6 +23,20 @@
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_account"
-            android:title="Profile" />
+            android:title="Profile"
+            />
+        <item
+            android:id="@+id/nav_findme"
+            android:icon="@drawable/ic_location"
+            android:title="Find Me"
+            />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_error"
+            android:title="About"
+            />
+
+
     </group>
 </menu>

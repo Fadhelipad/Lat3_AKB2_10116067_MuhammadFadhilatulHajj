@@ -17,8 +17,8 @@ import com.example.lat3_akb2_10116067_muhammadfadhilatulhajj.R;
 
 public class MusicRecyclerViewAdapter extends RecyclerView.Adapter<MusicRecyclerViewAdapter.MyMusicholder>  {
     // Provide a suitable constructor (depends on the kind of dataset)
-    String text[] = {"TIDUR","MAKAN","GAME"};
-    Integer gambar[] = {R.drawable.ic_tidur,R.drawable.ic_makan,R.drawable.ic_game};
+    String text[] = {"Blackpink - Dududu","Blackpink - Kill This Love","One OK Rock - Stand out fit in","One Ok Rock - Might long Fall"};
+    Integer gambar[] = {R.drawable.ic_blackpink,R.drawable.ic_blackpink2,R.drawable.ic_oke,R.drawable.ic_oke1};
     public MusicRecyclerViewAdapter() {
     }
 

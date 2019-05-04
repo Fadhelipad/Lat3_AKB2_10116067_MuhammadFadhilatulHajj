@@ -17,8 +17,8 @@ import com.example.lat3_akb2_10116067_muhammadfadhilatulhajj.R;
 
 public class VideoRecyclerViewAdapter extends RecyclerView.Adapter<VideoRecyclerViewAdapter.MyVideoholder>  {
     // Provide a suitable constructor (depends on the kind of dataset)
-    String text[] = {"TIDUR","MAKAN","GAME"};
-    Integer gambar[] = {R.drawable.ic_tidur,R.drawable.ic_makan,R.drawable.ic_game};
+    String text[] = {"Blackpink - DUDUDUDU","One OK Rock - The Beginning","Kodaline - High Hopes","The Avenger - ENDGAME"};
+    Integer gambar[] = {R.drawable.ic_video1,R.drawable.ic_video2,R.drawable.ic_video3,R.drawable.ic_video5};
     public VideoRecyclerViewAdapter() {
     }
 

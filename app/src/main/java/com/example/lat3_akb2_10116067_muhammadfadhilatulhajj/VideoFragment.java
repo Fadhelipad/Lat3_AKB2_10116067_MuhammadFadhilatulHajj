@@ -32,7 +32,7 @@ public class  VideoFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         // specify an adapter (see also next example)
-        mAdapter = new FriendRecyclerViewAdapter();
+        mAdapter = new VideoRecyclerViewAdapter();
         recyclerView.setAdapter(mAdapter);
 
         return v;
