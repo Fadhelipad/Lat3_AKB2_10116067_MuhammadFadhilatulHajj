@@ -106,7 +106,7 @@
                         android:orientation="vertical">
 
                         <ImageButton
-                            android:id="@+id/instagram"
+                            android:id="@+id/ig"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/ic_insta"

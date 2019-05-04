@@ -39,12 +39,51 @@ public class Home extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View v = inflater.inflate(R.layout.fragment_home, container, false);
 
 
+        ImageButton ig = (ImageButton) v.findViewById(R.id.ig);
+        ig.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToIg();
+            }
+
+            private void goToIg() {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/fadhel.ipad"));
+
+                startActivity(browserIntent);
+            }
+        });
+        ImageButton call = (ImageButton) v.findViewById(R.id.incall);
+        call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goTocall();
+            }
+
+            private void goTocall() {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:082218329362"));
+
+                startActivity(browserIntent);
+
+            }
+        });
+        ImageButton tw = (ImageButton) v.findViewById(R.id.twitter);
+        tw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goTotw();
+            }
+
+            private void goTotw() {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.twitter.com/@Fadhel_ipad"));
+
+                startActivity(browserIntent);
+
+            }
+        });
+        return v;
     }
-
-
-
-    }
+}
 
