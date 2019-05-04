@@ -1,5 +1,7 @@
 package com.example.lat3_akb2_10116067_muhammadfadhilatulhajj;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -19,7 +21,7 @@ public class Navigasidrawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected  void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigasidrawer);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -28,11 +30,18 @@ public class Navigasidrawer extends AppCompatActivity
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {goTomail();}
+            private void goTomail()
+            {
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:Fadhelipad33@gmail.com"));
+                startActivity(intent);
 
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+
+
+
             }
+
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -78,7 +87,7 @@ public class Navigasidrawer extends AppCompatActivity
         }
             else if (id== R.id.nav_findme)
             {
-                class1 = new Home();
+                class1 = new Fragment_map() ;
             }
             else if (id== R.id.nav_about) {
 
