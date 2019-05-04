@@ -21,7 +21,7 @@ public class Main2Activity extends AppCompatActivity {
         public void onClick(View v) {
             prefManager prefManager = new prefManager(getApplicationContext());
             prefManager.setFirstTimeLaunch(true);
-            startActivity(new Intent(Main2Activity.this, navigasidrawer.class));
+            startActivity(new Intent(Main2Activity.this, Navigasidrawer.class));
             finish();
         }
     });

@@ -7,36 +7,22 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home_1"
-            android:title="Import" />
+            android:title="Home" />
         <item
             android:id="@+id/nav_dialy"
             android:icon="@drawable/ic_dialy1"
-            android:title="Gallery" />
+            android:title="Daily" />
         <item
             android:id="@+id/nav_galeri"
             android:icon="@drawable/ic_gallery"
-            android:title="Slideshow" />
+            android:title="Galeri" />
         <item
             android:id="@+id/nav_music"
             android:icon="@drawable/ic_music"
-            android:title="Tools" />
+            android:title="Music Dan Video" />
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_account"
-            android:title="Tools" />
+            android:title="Profile" />
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
-
 </menu>

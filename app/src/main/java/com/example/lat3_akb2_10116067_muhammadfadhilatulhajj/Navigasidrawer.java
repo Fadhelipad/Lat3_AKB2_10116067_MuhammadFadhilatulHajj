@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -16,7 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class navigasidrawer extends AppCompatActivity
+public class Navigasidrawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
@@ -30,6 +29,7 @@ public class navigasidrawer extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
@@ -85,28 +85,27 @@ public class navigasidrawer extends AppCompatActivity
         Fragment class1 = null;
 
         if (id == R.id.nav_home) {
-            class1 = fragment_home.newInstance();
+            class1 = Home.newInstance();
 
         } else if (id == R.id.nav_dialy) {
-
+            class1 = Daily.newInstance();
         } else if (id == R.id.nav_galeri) {
-
+            class1 = new GaleriFragment();
         } else if (id == R.id.nav_music) {
-
+            class1 = Music.newInstance();
         } else if (id == R.id.nav_profile) {
+            class1 = new Home();
 
-        } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_send) {
 
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        return true;
 
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout,class1);
+        transaction.replace(R.id.content,class1);
         transaction.commit();
+        return true;
     }
 }

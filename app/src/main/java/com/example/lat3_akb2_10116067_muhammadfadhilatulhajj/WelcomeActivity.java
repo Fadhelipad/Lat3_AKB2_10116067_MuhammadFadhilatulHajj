@@ -69,7 +69,7 @@ public class WelcomeActivity extends AppCompatActivity {
         btnSkip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WelcomeActivity.this, navigasidrawer.class));
+                startActivity(new Intent(WelcomeActivity.this, Navigasidrawer.class));
                 finish();
             }
         });
@@ -84,7 +84,7 @@ public class WelcomeActivity extends AppCompatActivity {
                     // move to next screen
                     viewPager.setCurrentItem(current);
                 } else {
-                    startActivity(new Intent(WelcomeActivity.this, navigasidrawer.class));
+                    startActivity(new Intent(WelcomeActivity.this, Navigasidrawer.class));
                     finish();
                 }
             }
